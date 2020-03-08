@@ -1,0 +1,6 @@
+/* Repeating background pattern downloaded from toptal.com */
+body {
+    background: url(./assets/repeated-square.png);
+    background-repeat: repeat;
+  }
+  
