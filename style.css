@@ -5,12 +5,9 @@ body {
   }
 
   #img-overlay {
-    top: 65%;
+    top: 70%;
   }
 
   main {
-    max-width: 600px;
     margin: 10px;
   }
-
-  @media screen and ()
