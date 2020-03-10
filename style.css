@@ -1,13 +1,14 @@
 /* Repeating background pattern downloaded from toptal.com */
 body {
-    background: url(./assets/repeated-square.png);
+    background: url(./assets/memphis-mini.png);
     background-repeat: repeat;
   }
-
+/* image overlay allows the titles to cover the image, this css 
+is to move the H1 toward the bottom */
   #img-overlay {
     top: 70%;
   }
-
+/* add margin of 10px to the main wrapper */
   main {
     margin: 10px;
   }

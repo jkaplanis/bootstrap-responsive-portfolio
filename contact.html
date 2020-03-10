@@ -6,22 +6,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>About Me</title>
+    <title>Contact</title>
 </head>
 
+<!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
 <body class="d-flex flex-column h-100">
     <!-- Navbar header -->
     <nav class="navbar-expand navbar-light bg-light border-bottom border-secondary">
         <div class="container mw-100">
             <div class="row">
+                <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
                 <div class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start">
+                    <!-- header has no marging until sm is reached, then it has margin left of 3 -->
                     <span class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3">John Kaplanis</span>
                 </div>
+                <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
                 <div class="col-sm my-auto d-flex justify-content-center justify-content-sm-end">
+                    <!-- header has no margin until sm is reached, then it has margin right of 3 -->
                     <div class="navbar-nav mx-0 mr-sm-3">
                         <a class="nav-item nav-link" href="./index.html">About </a>
                         <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
@@ -31,9 +36,9 @@
             </div>
         </div>
     </nav>
-    <!-- contact form -->
+    <!-- contact form, max width set to avoid stretching across the window on larger screens -->
     <div class="p-3" style="max-width: 550px;">
-        <main class="container border border-light bg-white">
+        <main class="container border bg-white pb-3">
             <div class="row">
                 <div class="col">
                     <h1 class="border-bottom p-2 text-info">Contact</h1>
@@ -59,7 +64,7 @@
         </main>
     </div>
 
-    <!-- Sticky footer -->
+    <!-- Sticky footer with centered content -->
     <footer class="footer mt-auto py-3 bg-info border-top border-secondary">
         <span class="text-white d-flex justify-content-center">&copy; Copyright</span>
     </footer>
