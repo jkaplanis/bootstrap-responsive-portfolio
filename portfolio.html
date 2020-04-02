@@ -1,105 +1,315 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio</title>
-</head>
-
-<!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
-<body class="d-flex flex-column h-100">
-  <!-- Navbar header -->
-  <nav class="navbar-expand navbar-light bg-light border-bottom border-secondary">
-    <div class="container mw-100">
-      <div class="row">
-          <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
-        <div class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start">
-            <!-- header has no marging until sm is reached, then it has margin left of 3 -->
-            <span class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3">John Kaplanis</span>
-        </div>
-        <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
-        <div class="col-sm my-auto d-flex justify-content-center justify-content-sm-end">
-          <!-- header has no margin until sm is reached, then it has margin right of 3 -->
-            <div class="navbar-nav mx-0 mr-sm-3">
-            <a class="nav-item nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="./contact.html">Contact</a>
+  <!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
+  <body class="d-flex flex-column h-100">
+    <!-- Modal COVID-19 Tracker-->
+    <div
+      class="modal fade"
+      id="covid19modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              COVID-19 Tracker
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="mw-100"
+              src="/assets/covid19.png"
+              alt="Weather Dashboard"
+            />
+          </div>
+          <div class="modal-footer mx-auto">
+            <a
+              class="btn btn-info"
+              href="https://jkaplanis.github.io/covid19-tracker/"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Deployed App
+            </a>
+            <a
+              class="btn btn-info"
+              href="https://github.com/jkaplanis/covid19-tracker"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Github Repo
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </nav>
-  <!-- Portfolio content wrapped in a container -->
-  <main class="container">
-      <div class="row">
-          <!-- When large is hit, apply 8 columns -->
-          <div class="col-lg-8">
-            <div class="bg-white m-3 p-3 border">
-                <h1 class="border-bottom p-2 text-info">Portfolio</h1>
-                <!-- Until small is reached, only 1 column. At small or larger, 2 columns -->
-              <section class="row row-cols-1 row-cols-sm-2">
-                <div class="col mb-4">
-                  <article class="card">
-                    <img src="./assets/newspaper.jpg" class="card-img" alt="Newspaper stack">
-                    <!-- image overlay allows the element within the div to display over the image -->
-                    <div id= "img-overlay" class="card-img-overlay p-0">
-                      <h5 class="card-title text-white bg-info py-3 text-center">News App</h5>
-                    </div>
-                  </article>
-                </div>
-                <div class="col mb-4">
-                    <article class="card">
-                      <img src="./assets/avocado.jpeg" class="card-img" alt="Cut open avocado">
-                      <!-- image overlay allows the element within the div to display over the image -->
-                      <div id= "img-overlay" class="card-img-overlay p-0">
-                        <h5 class="card-title text-white bg-info py-3 text-center">Health</h5>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col mb-4">
-                    <article class="card">
-                      <img src="./assets/eye-draw.jpeg" class="card-img" alt="Pencil drawing of eye">
-                      <!-- image overlay allows the element within the div to display over the image -->
-                      <div id= "img-overlay" class="card-img-overlay p-0">
-                        <h5 class="card-title text-white bg-info py-3 text-center">Art Database</h5>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col mb-4">
-                    <article class="card">
-                      <img src="./assets/finger-print.png" class="card-img" alt="Digital fingerprint">
-                      <!-- image overlay allows the element within the div to display over the image -->
-                      <div id= "img-overlay" class="card-img-overlay p-0">
-                        <h5 class="card-title text-white bg-info py-3 text-center">Security Tool</h5>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="col mb-4">
-                    <article class="card">
-                      <img src="./assets/water.gif" class="card-img" alt="Blue water">
-                      <!-- image overlay allows the element within the div to display over the image -->
-                      <div id= "img-overlay" class="card-img-overlay p-0">
-                        <h5 class="card-title text-white bg-info py-3 text-center">Where's the pool?</h5>
-                      </div>
-                    </article>
-                  </div>
-                </section>
+    <!-- Modal Day Planner-->
+    <div
+      class="modal fade"
+      id="dayplannermodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Day Planner
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="mw-100"
+              src="/assets/day-planner.png"
+              alt="Weather Dashboard"
+            />
+          </div>
+          <div class="modal-footer mx-auto">
+            <a
+              class="btn btn-info"
+              href="https://jkaplanis.github.io/day-planner/"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Deployed App
+            </a>
+            <a
+              class="btn btn-info"
+              href="https://github.com/jkaplanis/day-planner"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Github Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Weather Dashboard-->
+    <div
+      class="modal fade"
+      id="weathermodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Weather Dashboard
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="mw-100"
+              src="/assets/weather-dashboard.png"
+              alt="Weather Dashboard"
+            />
+          </div>
+          <div class="modal-footer mx-auto">
+            <a
+              class="btn btn-info"
+              href="https://jkaplanis.github.io/weather-dashboard/"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Deployed App
+            </a>
+            <a
+              class="btn btn-info"
+              href="https://github.com/jkaplanis/weather-dashboard"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Github Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar header -->
+    <nav
+      class="navbar-expand navbar-light bg-light border-bottom border-secondary"
+    >
+      <div class="container mw-100">
+        <div class="row">
+          <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
+          <div
+            class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start"
+          >
+            <!-- header has no marging until sm is reached, then it has margin left of 3 -->
+            <span
+              class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3"
+              >John Kaplanis</span
+            >
+          </div>
+          <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
+          <div
+            class="col-sm my-auto d-flex justify-content-center justify-content-sm-end"
+          >
+            <!-- header has no margin until sm is reached, then it has margin right of 3 -->
+            <div class="navbar-nav mx-0 mr-sm-3">
+              <a class="nav-item nav-link" href="./index.html"
+                >About <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+              <a class="nav-item nav-link" href="./contact.html">Contact</a>
             </div>
           </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Portfolio content wrapped in a container -->
+    <main class="container">
+      <div class="row">
+        <!-- When large is hit, apply 8 columns -->
+        <div class="col-lg-8">
+          <div class="bg-white m-3 p-3 border">
+            <h1 class="border-bottom p-2 text-info">Portfolio</h1>
+            <!-- Until small is reached, only 1 column. At small or larger, 2 columns -->
+            <section class="row row-cols-1 row-cols-sm-2">
+              <div class="col mb-4">
+                <article class="card">
+                  <img
+                    src="./assets/covid19.png"
+                    class="card-img"
+                    alt="Covid-19 Stats"
+                  />
+                  <!-- image overlay allows the element within the div to display over the image -->
+                  <div id="img-overlay" class="card-img-overlay p-0">
+                    <button
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#covid19modal"
+                      class="btn text-info bg-light py-3 text-center w-100"
+                    >
+                      <h5 class="mb-0">COVID-19 Tracker</h5>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="col mb-4">
+                <article class="card">
+                  <img
+                    src="./assets/day-planner.png"
+                    class="card-img"
+                    alt="Day Planner"
+                  />
+                  <!-- image overlay allows the element within the div to display over the image -->
+                  <div id="img-overlay" class="card-img-overlay p-0">
+                    <button
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#dayplannermodal"
+                      class="btn text-info bg-light py-3 text-center w-100"
+                    >
+                      <h5 class="mb-0">Day Planner</h5>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="col mb-4">
+                <article class="card">
+                  <img
+                    src="./assets/weather-dashboard.png"
+                    class="card-img"
+                    alt="Weather Dashboard"
+                  />
+                  <!-- image overlay allows the element within the div to display over the image -->
+                  <div id="img-overlay" class="card-img-overlay p-0">
+                    <button
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#weathermodal"
+                      class="btn text-info bg-light py-3 text-center w-100"
+                    >
+                      <h5 class="mb-0">Weather Dashboard</h5>
+                    </button>
+                  </div>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </main>
 
-  <!-- Sticky footer -->
-  <footer class="footer mt-auto py-3 bg-info border-top border-secondary">
-    <span class="text-white d-flex justify-content-center">&copy; Copyright</span>
-  </footer>
-</body>
- 
+    <!-- Sticky footer -->
+    <footer class="footer mt-auto py-3 bg-info border-top border-secondary">
+      <span class="text-white d-flex justify-content-center"
+        >&copy; Copyright</span
+      >
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
