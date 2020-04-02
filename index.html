@@ -1,67 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>About Me</title>
+  </head>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <title>About Me</title>
-</head>
-
-<!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
-<body class="d-flex flex-column h-100">
-  <!-- Navbar header -->
-  <nav class="navbar-expand navbar-light bg-light border-bottom border-secondary">
-    <div class="container mw-100">
-      <div class="row">
-        <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
-        <div class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start">
-          <!-- header has no marging until sm is reached, then it has margin left of 3 -->
-          <span class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3">John Kaplanis</span>
-        </div>
-        <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
-        <div class="col-sm my-auto d-flex justify-content-center justify-content-sm-end">
-          <!-- header has no margin until sm is reached, then it has margin right of 3 -->
-          <div class="navbar-nav mx-0 mr-sm-3">
-            <a class="nav-item nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-            <a class="nav-item nav-link" href="./contact.html">Contact</a>
+  <!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
+  <body class="d-flex flex-column h-100">
+    <!-- Navbar header -->
+    <nav
+      class="navbar-expand navbar-light bg-light border-bottom border-secondary"
+    >
+      <div class="container mw-100">
+        <div class="row">
+          <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
+          <div
+            class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start"
+          >
+            <!-- header has no marging until sm is reached, then it has margin left of 3 -->
+            <span
+              class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3"
+              >John Kaplanis</span
+            >
+          </div>
+          <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
+          <div
+            class="col-sm my-auto d-flex justify-content-center justify-content-sm-end"
+          >
+            <!-- header has no margin until sm is reached, then it has margin right of 3 -->
+            <div class="navbar-nav mx-0 mr-sm-3">
+              <a class="nav-item nav-link" href="./index.html"
+                >About <span class="sr-only">(current)</span></a
+              >
+              <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+              <a
+                class="nav-item nav-link"
+                href="./assets/john-kaplanis-resume.pdf"
+                target="_blank"
+                >Resume</a
+              >
+              <a class="nav-item nav-link" href="./contact.html">Contact</a>
+            </div>
           </div>
         </div>
       </div>
+    </nav>
+    <!-- About Me container with profile image and text content -->
+    <div class="p-3" style="max-width: 750px;">
+      <main class="container border bg-white">
+        <h1 class="p-2 border-bottom">About Me</h1>
+        <div class="row">
+          <div class="col">
+            <div class="text-center">
+              <img
+                src="./assets/profile-photo.jpeg"
+                alt="John Kaplanis"
+                class="rounded float-sm-left m-3"
+                width="200"
+              />
+            </div>
+            <p>
+              Web Developer leveraging a bachelor’s degree in Business
+              Management Economics from UC Santa Cruz as well as a background in
+              sales and marketing at technology focused start-ups. I bring
+              strong leadership, communication, customer service, and conflict
+              resolution skills from 5 years experience in hospitality
+              management.
+            </p>
+            <p>
+              Graduate of the University of California, San Diego Full Stack Web
+              Development Boot Camp with skills in JavaScript, React.js,
+              MongoDB, and Node.js. Throughout this program I have worked both
+              independently and as a team, becoming proficient in agile
+              development and Github version control. I am a driven, detail
+              oriented programmer with a passion for problem solving,
+              collaboration, and learning. Positioned well to provide unique
+              perspectives on how end-users interact with websites and software
+              platforms by leveraging my background in technology-focused sales
+              and marketing.
+            </p>
+          </div>
+        </div>
+      </main>
     </div>
-  </nav>
-  <!-- About Me container with profile image and text content -->
-  <div class="p-3" style="max-width: 750px;">
-    <main class="container border bg-white">
-      <h1 class="p-2 border-bottom">About Me</h1>
-      <div class="row">
-        <div class="col">
-          <div class="text-center">
-            <img src="./assets/profile-photo.jpeg" alt="John Kaplanis" class="rounded float-sm-left m-3" width="200">
-          </div>
-          <p>After graduating from UC Santa Cruz in 2011, I began a career in hospitality with a focus on front office
-            management. After spending a few years working in hotels I decided it was time for a change. In the years
-            that followed I had the opportunity to work for a larger emerging growth company as well as a smaller
-            startup.
-          </p>
-          <p>I am currently enrolled in the coding bootcamp at UCSD where I am developing the skills needed to become a
-            full-stack web developer. I look forward to combining this new skillset with my previous experience in order
-            to launch my new career.</p>
-        </div>
-      </div>
-    </main>
-  </div>
 
-  <!-- Sticky footer with centered content-->
-  <footer class="footer mt-auto py-3 bg-info border-top border-secondary">
-    <span class="text-white d-flex justify-content-center">&copy; Copyright</span>
-  </footer>
-</body>
-
+    <!-- Sticky footer with centered content-->
+    <footer class="footer mt-auto py-3 bg-secondary border-top border-info">
+      <span class="text-white d-flex justify-content-center"
+        >&copy; Copyright</span
+      >
+    </footer>
+  </body>
 </html>

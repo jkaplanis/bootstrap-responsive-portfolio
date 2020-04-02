@@ -1,14 +1,24 @@
 /* Repeating background pattern downloaded from toptal.com */
 body {
-    background: url(./assets/memphis-mini.png);
-    background-repeat: repeat;
-  }
+  background: url(./assets/memphis-mini.png);
+  background-repeat: repeat;
+}
 /* image overlay allows the titles to cover the image, this css 
 is to move the H1 toward the bottom */
-  #img-overlay {
-    top: 70%;
-  }
+#img-overlay {
+  top: 70%;
+}
 /* add margin of 10px to the main wrapper */
-  main {
-    margin: 10px;
-  }
+main {
+  margin: 10px;
+}
+
+#github-button {
+  color: white;
+  background-color: #2f292e;
+}
+
+#linkedin-button {
+  color: white;
+  background-color: #2e77b0;
+}

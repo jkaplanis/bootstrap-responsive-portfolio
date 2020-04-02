@@ -1,73 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="h-100">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Contact</title>
-</head>
+  </head>
 
-<!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
-<body class="d-flex flex-column h-100">
+  <!-- flex and h-100 needed for sticky footer to work (see h-100 in first html tag at the top of the page as well) -->
+  <body class="d-flex flex-column h-100">
     <!-- Navbar header -->
-    <nav class="navbar-expand navbar-light bg-light border-bottom border-secondary">
-        <div class="container mw-100">
-            <div class="row">
-                <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
-                <div class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start">
-                    <!-- header has no marging until sm is reached, then it has margin left of 3 -->
-                    <span class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3">John Kaplanis</span>
-                </div>
-                <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
-                <div class="col-sm my-auto d-flex justify-content-center justify-content-sm-end">
-                    <!-- header has no margin until sm is reached, then it has margin right of 3 -->
-                    <div class="navbar-nav mx-0 mr-sm-3">
-                        <a class="nav-item nav-link" href="./index.html">About </a>
-                        <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
-                        <a class="nav-item nav-link" href="./contact.html">Contact <span class="sr-only">(current)</span></a>
-                    </div>
-                </div>
+    <nav
+      class="navbar-expand navbar-light bg-light border-bottom border-secondary"
+    >
+      <div class="container mw-100">
+        <div class="row">
+          <!-- column takes its own row and content is centered until sm is reached, then it is justified left -->
+          <div
+            class="col-sm  my-auto d-flex justify-content-center justify-content-sm-start"
+          >
+            <!-- header has no marging until sm is reached, then it has margin left of 3 -->
+            <span
+              class="navbar-brand bg-info text-white h1 p-3 my-auto mx-0 ml-sm-3"
+              >John Kaplanis</span
+            >
+          </div>
+          <!-- column takes its own row and content is centered until sm is reached, then it is justified right -->
+          <div
+            class="col-sm my-auto d-flex justify-content-center justify-content-sm-end"
+          >
+            <!-- header has no margin until sm is reached, then it has margin right of 3 -->
+            <div class="navbar-nav mx-0 mr-sm-3">
+              <a class="nav-item nav-link" href="./index.html">About </a>
+              <a class="nav-item nav-link" href="./portfolio.html">Portfolio</a>
+              <a
+                class="nav-item nav-link"
+                href="./assets/john-kaplanis-resume.pdf"
+                target="_blank"
+                >Resume</a
+              >
+              <a class="nav-item nav-link" href="./contact.html"
+                >Contact <span class="sr-only">(current)</span></a
+              >
             </div>
+          </div>
         </div>
+      </div>
     </nav>
     <!-- contact form, max width set to avoid stretching across the window on larger screens -->
     <div class="p-3" style="max-width: 550px;">
-        <main class="container border bg-white pb-3">
-            <div class="row">
-                <div class="col">
-                    <h1 class="border-bottom p-2 text-info">Contact</h1>
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-info">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </main>
+      <main class="container border bg-white pb-3">
+        <div class="row">
+          <div class="col">
+            <h1 class="border-bottom p-2 text-info">Contact</h1>
+            <h4><strong>Email:</strong></h4>
+            <a href="mailto:johntkaplanis@gmail.com">johntkaplanis@gmail.com</a>
+            <h4 class="mt-2"><strong>Phone:</strong></h4>
+            <a href="tel:831-524-0658">831-524-0658</a>
+            <h4 class="mt-2"><strong>Address:</strong></h4>
+            <p class="mb-0">3060 Suncrest Dr Unit 18</p>
+            <p>San Diego, CA 92116</p>
+            <a
+              id="github-button"
+              class="btn"
+              href="https://github.com/jkaplanis"
+              target="_blank"
+              role="button"
+            >
+              Github
+            </a>
+            <a
+              id="linkedin-button"
+              class="btn"
+              href="https://www.linkedin.com/in/john-kaplanis/"
+              target="_blank"
+              role="button"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </main>
     </div>
 
     <!-- Sticky footer with centered content -->
-    <footer class="footer mt-auto py-3 bg-info border-top border-secondary">
-        <span class="text-white d-flex justify-content-center">&copy; Copyright</span>
+    <footer class="footer mt-auto py-3 bg-secondary border-top border-info">
+      <span class="text-white d-flex justify-content-center"
+        >&copy; Copyright</span
+      >
     </footer>
-</body>
-
+  </body>
 </html>
