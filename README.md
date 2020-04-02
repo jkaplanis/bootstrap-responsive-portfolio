@@ -1,4 +1,4 @@
-# Bootstrap Responsive Portfolio
+# Bootstrap Portfolio
 
 Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.
 
@@ -8,8 +8,8 @@ The goal of this project is to create a mobile responsive portfolio website usin
 
 ## Links
 
-Live page: https://jkaplanis.github.io/bootstrap-responsive-portfolio/
-Github Repo: https://github.com/jkaplanis/bootstrap-responsive-portfolio
+Live page: https://jkaplanis.github.io/bootstrap-responsive-portfolio/  
+Github Repo: https://github.com/jkaplanis/bootstrap-responsive-portfolio  
 
 ## Screenshots 
 
