@@ -183,6 +183,60 @@
         </div>
       </div>
     </div>
+    <!-- Modal Day Planner-->
+    <div
+      class="modal fade"
+      id="burgermodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Day Planner
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="mw-100"
+              src="./assets/burger-logger.png"
+              alt="Burger Logger"
+            />
+          </div>
+          <div class="modal-footer mx-auto">
+            <a
+              class="btn btn-info"
+              href="https://salty-brushlands-08932.herokuapp.com/"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Deployed App
+            </a>
+            <a
+              class="btn btn-info"
+              href="https://github.com/jkaplanis/burger"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Github Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Navbar header -->
     <nav
       class="navbar-expand navbar-light bg-light border-bottom border-secondary"
@@ -286,6 +340,26 @@
                       class="btn text-info bg-light py-3 text-center w-100"
                     >
                       <h5 class="mb-0">Weather Dashboard</h5>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="col mb-4">
+                <article class="card">
+                  <img
+                    src="./assets/burger.jpg"
+                    class="card-img"
+                    alt="Burger Logger"
+                  />
+                  <!-- image overlay allows the element within the div to display over the image -->
+                  <div id="img-overlay" class="card-img-overlay p-0">
+                    <button
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#burgermodal"
+                      class="btn text-info bg-light py-3 text-center w-100"
+                    >
+                      <h5 class="mb-0">Burger Logger</h5>
                     </button>
                   </div>
                 </article>
