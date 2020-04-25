@@ -128,6 +128,60 @@
         </div>
       </div>
     </div>
+    <!-- Modal Employee Template Engine-->
+    <div
+      class="modal fade"
+      id="templateenginemodal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Employee Template Engine
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img
+              class="mw-100"
+              src="./assets/employeeteam.png"
+              alt="employee team"
+            />
+          </div>
+          <div class="modal-footer mx-auto">
+            <!-- <a
+              class="btn btn-info"
+              href="https://jkaplanis.github.io/day-planner/"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Deployed App
+            </a> -->
+            <a
+              class="btn btn-info"
+              href="https://github.com/jkaplanis/employee-summary-template-engine"
+              target="_blank"
+              role="button"
+              aria-pressed="true"
+            >
+              Github Repo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Modal Day Planner-->
     <div
       class="modal fade"
@@ -373,6 +427,26 @@
                       class="btn text-info bg-light py-3 text-center w-100"
                     >
                       <h5 class="mb-0">COVID-19 Tracker</h5>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div class="col mb-4">
+                <article class="card">
+                  <img
+                    src="./assets/team.jpg"
+                    class="card-img"
+                    alt="Day Planner"
+                  />
+                  <!-- image overlay allows the element within the div to display over the image -->
+                  <div id="img-overlay" class="card-img-overlay p-0">
+                    <button
+                      type="button"
+                      data-toggle="modal"
+                      data-target="#templateenginemodal"
+                      class="btn text-info bg-light py-3 text-center w-100"
+                    >
+                      <h5 class="mb-0">Employee Template Engine</h5>
                     </button>
                   </div>
                 </article>
